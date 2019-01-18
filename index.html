@@ -1,0 +1,48 @@
+
+<html> 
+<body>
+	<h2> <u>Welcome to Simple Docker API  </u> </h2>	
+	<img src="https://cdn-images-1.medium.com/max/1600/1*JfSp7LWmVE1nj15IrxWSWQ.png" style="float:right;width:550px;height:450px;">
+	<h4>   USAGE:   <br> </h4> 
+	<p>
+	------------------------- <br>
+	List (GET) <br>
+	------------------------- <br>
+	
+	- <input type="button" value="Containers" onclick='Switch("/containers")'>  <br>
+	- <input type="button" value="Images" onclick='Switch("/images")'> <br>
+	- <input type="button" value="Volumes" onclick='Switch("/volumes")'> <br>
+	- <input type="button" value="Networks" onclick='Switch("/networks")'> <br>
+	- <input type="button" value="Services" onclick='Switch("/services")'> <br>
+	- <input type="button" value="Nodes" onclick='Switch("/nodes")'>   <br>
+	<br>
+	------------------------- <br>
+	STOP/START (POST) <br>
+	------------------------- <br>
+	- /containers/{id}/stop <br>
+	- /containers/{id}/start <br>
+	<br>
+	-------------------------------- <br>
+	FOR API REQUESTS - JSON RESPONSE <br>
+	--------------------------------- 
+	<br>
+
+
+	- /api/containers | /api/containers/{container_id} <br>
+	- /api/images | /api/images/{image_id} <br>
+	- /api/volumes | /api/volumes/{volume_id} <br>
+	- /api/networks | /api/networks/{network_id} <br>
+	- /api/services | TODO for individual <br>
+	- /api/nodes | TODO for individual <br>
+	
+	 </p>
+	 
+	 <script>
+		function Switch(path) {
+			window.location.assign(path);
+		}
+		</script>
+	 </body>
+
+	 <footer>----------------------------<br>Author: Marko Petrovic 2019<br>----------------------------</footer>
+	</html>
