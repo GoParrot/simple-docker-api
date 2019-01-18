@@ -2,7 +2,7 @@
 -----------------------------------------
 **USAGE:**
 
-./dagent
+./dagent || or go run dagent.go 
 
 => List (GET) 
 	
